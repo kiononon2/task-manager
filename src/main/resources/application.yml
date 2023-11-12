@@ -1,9 +1,9 @@
 spring:
 
   datasource:
-    url: jdbc:postgresql://localhost:5699/cherry
-    username: cherry
-    password: cherry
+    url: jdbc:postgresql://localhost:8080/ilanikolaev
+    username: ilanikolaev
+    password: ilanikolaev
   jpa:
     open-in-view: 'true'
     properties:
@@ -14,9 +14,9 @@ spring:
         format_sql: 'true'
     show-sql: 'true'
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
   application:
-    name: demo-project
+    name: task-manager
 server:
   port: 8081
 

@@ -17,4 +17,5 @@ public class BoardDto {
     private Long id;
     private String title;
     private List<Long> columnBoardId = new ArrayList<>();
+    private List<Long> userId = new ArrayList<>();
 }

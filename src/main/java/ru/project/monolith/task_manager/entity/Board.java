@@ -25,4 +25,6 @@ public class Board {
 
     @OneToMany(mappedBy = "board")
     private List<ColumnBoard> columnBoards;
+    @OneToMany(mappedBy = "board")
+    private List<User> users;
 }

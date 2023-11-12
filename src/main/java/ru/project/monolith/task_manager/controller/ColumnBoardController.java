@@ -12,8 +12,8 @@ import java.util.List;
 @RequestMapping("/api/v1/user/board/column")
 @RequiredArgsConstructor
 public class ColumnBoardController {
-    @Autowired
-    private ColumnBoardService service;
+//    @Autowired
+    private final ColumnBoardService service;
 
 
     @GetMapping

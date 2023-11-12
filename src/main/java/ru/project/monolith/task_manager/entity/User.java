@@ -30,4 +30,7 @@ public class User {
 
     @ManyToMany(mappedBy = "users")
     private List<Task> task;
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = true)
+    private Board board;
 }

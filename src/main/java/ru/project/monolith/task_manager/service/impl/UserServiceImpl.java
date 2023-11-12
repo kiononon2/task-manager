@@ -30,11 +30,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void create(UserDto entity) {
-        try {
-            repository.save(mapper.toEntity(entity));
-        } catch(RuntimeException e) {
-            throw new AdviceException(ErrorStatus.ERROR_NULL_BODY);
-        }
+        repository.save(mapper.toEntity(entity));
+//        try {
+//            repository.save(mapper.toEntity(entity));
+//        } catch(RuntimeException e) {
+//            throw new AdviceException(ErrorStatus.ERROR_NULL_BODY);
+//        }
     }
 
     @Override

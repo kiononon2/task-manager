@@ -1,5 +1,6 @@
 package ru.project.monolith.task_manager.dto;
 
+import jakarta.annotation.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Getter
 @Setter
@@ -18,4 +20,5 @@ public class UserDto {
     private String password;
     private String email;
     private List<Long> taskId = new ArrayList<>();
+    private Long boardId;
 }
